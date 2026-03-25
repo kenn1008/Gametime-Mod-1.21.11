@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.kenn1008.mixin.client",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"WorldEntryMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
