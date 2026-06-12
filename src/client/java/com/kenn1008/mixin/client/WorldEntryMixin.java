@@ -27,7 +27,7 @@ public abstract class WorldEntryMixin extends ObjectSelectionList.Entry {
     @Unique
     private String realPlaytime = null;
 
-    @Inject(method = "renderContent", at = @At("TAIL"))
+    @Inject(method = "render", at = @At("TAIL"))
     private void renderPlaytime(GuiGraphics guiGraphics, int mouseX, int mouseY, boolean isHovered, float partialTick, CallbackInfo ci) {
         if (this.realPlaytime == null) {
             this.realPlaytime = fetchPlaytimeFromDat();
@@ -38,8 +38,8 @@ public abstract class WorldEntryMixin extends ObjectSelectionList.Entry {
         int textY = this.getContentY() + 2;
 
         guiGraphics.pose().pushMatrix();
-        guiGraphics.pose().translate(textX, textY);
-        guiGraphics.pose().scale(0.8f, 0.8f);
+        guiGraphics.translate(textX, textY);
+        guiGraphics.scale(0.8f, 0.8f);
         guiGraphics.drawString(this.minecraft.font, this.realPlaytime, 0, 0, 0xAAFFAA00, false);
         guiGraphics.pose().popMatrix();
     }
