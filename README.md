@@ -1,6 +1,6 @@
-# Gametime Mod (1.21.1)
+# Gametime Mod (26.1.2)
 
-A lightweight, clean utility for Minecraft 1.21.1 that displays your total playtime for each world directly on the Singleplayer selection screen.
+A lightweight, clean utility for Minecraft 26.1.2 that displays your total playtime for each world directly on the Singleplayer selection screen.
 
 ## Features
 - **Seamless UI:** Displays hours and minutes (e.g., ` 5h 24m`) next to the world name.
